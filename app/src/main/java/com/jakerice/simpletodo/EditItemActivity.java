@@ -26,6 +26,13 @@ public class EditItemActivity extends AppCompatActivity {
         editItem.setText(extraText);
         editItem.setSelection(extraText.length());
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        editItem.setFocusableInTouchMode(true);
+        editItem.requestFocus();
+    }
 
     public void onUpdate(View v) {
         String newText = editItem.getText().toString();

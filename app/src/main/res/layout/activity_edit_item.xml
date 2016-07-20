@@ -17,7 +17,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btnUpdate"
-        android:layout_toStartOf="@+id/btnUpdate" />
+        android:layout_toStartOf="@+id/btnUpdate"
+        android:imeOptions="actionDone"/>
 
     <Button
         android:layout_width="wrap_content"
